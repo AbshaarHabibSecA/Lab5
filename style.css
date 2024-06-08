@@ -1,0 +1,18 @@
+:root {
+    --main-color: blue;
+    --font-size-large: 2rem;
+    --margin-standard: 1rem;
+}
+body {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2rem;
+}
+
+.teko-heading {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
