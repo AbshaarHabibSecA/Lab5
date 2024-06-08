@@ -1,18 +1,71 @@
 :root {
-    --main-color: blue;
+    --main-color: #c9e3ac;
+    --secondary-color: #90BE6D;
     --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
     --margin-standard: 1rem;
+    --padding-standard: 1rem;
 }
 body {
-    font-size: 1rem;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color)
 }
-h1 {
-    font-size: 2rem;
+header, footer {
+    background-color:  #EAEFBD;
+    color: #37371F;
+    text-align: center;
+    padding: var(--padding-standard)
 }
-
 .teko-heading {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+nav ul li {
+display: inline;
+margin: 0 10px;
+}
+nav ul li a {
+    color: purple;
+    font-size: var(--font-size-medium)
+}
+section {
+    padding: var(--padding-standard);
+}
+h1,h2,h3 {
+    color: var(--main-color)
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: var(--margin-standard)
+}
+.card {
+background-color: #EA9010;
+padding: var(--padding-standard);
+}
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+@media (max-width:768px) { 
+    body {
+        font-size: 0.8rem;
+}
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+nav ul li a {
+    font-size: var(--font-size-small);
+}
 }
